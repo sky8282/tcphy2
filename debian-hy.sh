@@ -17,7 +17,7 @@ if [ -f /etc/hysteria/config.yaml ]; then
     CERT_PATH=$(grep -E '^\s+cert:' /etc/hysteria/config.yaml | awk '{print $2}')
     KEY_PATH=$(grep -E '^\s+key:' /etc/hysteria/config.yaml | awk '{print $2}')
 else
-    echo "未找到 /etc/hysteria/config.yaml 文件，请检查路径。"
+    echo "未找到 /etc/hysteria/config.yaml 文件，请检查是否安装了hy2"
     echo "适用 debian 的hy脚本："
     echo "wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh"
     exit 1
