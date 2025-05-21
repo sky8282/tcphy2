@@ -20,6 +20,7 @@ else
     echo "未找到 /etc/hysteria/config.yaml 文件，请检查是否安装了hy2"
     echo "适用 debian 的hy2脚本："
     echo "wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/hysteria-install/main/hy2/hysteria.sh && bash hysteria.sh"
+    echo ""
     exit 1
 fi
 
