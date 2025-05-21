@@ -17,7 +17,9 @@ if [ -f /etc/hysteria/config.yaml ]; then
     CERT=$(grep -E '^\s+cert:' /etc/hysteria/config.yaml | awk '{print $2}')
     KEY=$(grep -E '^\s+key:' /etc/hysteria/config.yaml | awk '{print $2}')
 else
-    echo "未找到 /etc/hysteria/config.yaml 文件，请检查路径。"
+    echo "未找到 /etc/hysteria/config.yaml 文件，请检查是否安装了hy2"
+    echo "适用 alpine 的hy脚本"
+    echo "wget -O hy2.sh https://raw.githubusercontent.com/zrlhk/alpine-hysteria2/main/hy2.sh  && sh hy2.sh"
     exit 1
 fi
 
