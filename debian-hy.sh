@@ -116,7 +116,7 @@ quic:
   maxStreamReceiveWindow: $maxStream
   initConnReceiveWindow: $initConn
   maxConnReceiveWindow: $maxConn
-
+  maxConnClient: 64
 auth:
   type: password
   password: $PASSWORD
